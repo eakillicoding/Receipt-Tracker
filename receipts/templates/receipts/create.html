@@ -1,16 +1,16 @@
-{% extends "accountsbase.html" %}
+{% extends "receiptsbase.html" %}
 
 {% block title %}
-    Signup
+    Create Receipt
 {% endblock title %}
 {% block content %}
     <main>
         <div>
-            <h1>Signup</h1>
+            <h1>Create Receipt</h1>
             <form method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button>Signup</button>
+                <button>Create</button>
             </form>
         </div>
     </main>
