@@ -45,5 +45,8 @@ class Receipt(models.Model):
         on_delete=models.CASCADE,
     )
     account = models.ForeignKey(
-        "Account", related_name="receipts", on_delete=models.CASCADE, null=True
+        "Account",
+        related_name="receipts",
+        on_delete=models.CASCADE,
+        null=True,
     )
